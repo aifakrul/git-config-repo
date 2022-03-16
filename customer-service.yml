@@ -13,13 +13,4 @@ spring:
   application:
     name: customer-service
   datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    password: admin
-    url: jdbc:mysql://localhost:3306/customerservice
-    username: admin
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MariaDBDialect
+    url: mongodb://mongodb0.example.com:27017/customerservice
