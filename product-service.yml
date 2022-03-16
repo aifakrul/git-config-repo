@@ -8,19 +8,9 @@ eureka:
     hostname: localhost
     instance-id: ${spring.application.name}-${random.uuid}
 server:
-  port: 9191
+  port: 9192
 spring:
   application:
     name: product-service
   datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    password: admin
-    url: jdbc:mysql://localhost:3306/productservice
-    username: admin
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MariaDBDialect
-    show-sql: true
+    url: mongodb://mongodb0.example.com:27017/productservice
