@@ -15,7 +15,7 @@ spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     password: admin
-    url: jdbc:mysql://localhost:3306/orderservice
+    url: jdbc:mysql://localhost:3306/customerservice
     username: admin
   jpa:
     hibernate:
